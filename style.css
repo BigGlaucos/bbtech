@@ -1,207 +1,375 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
     font-family: 'Bahnschrift', sans-serif;
 }
 
-header{
-position: sticky;
-top: 0;
+header {
+    position: sticky;
+    top: 0px;
+    box-shadow: black -1px 3px 20px 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #fff112;
 
 }
-body{
-display: flex;
-flex-direction: column;
-justify-content: center;
 
-}
-.cabecaDaCabeca{
+.cabecaDaCabeca {
     width: 100%;
     background-color: #fff112;
     height: 8.0vh;
 }
-.nav{
+
+.nav {
     width: 100%;
     background-color: rgb(254, 252, 252);
     margin: 0;
     color: rgb(4, 4, 4);
     position: sticky;
     top: 0;
-
 }
 
-ul{
-display: flex;
-align-items: center;
-justify-content: space-around;
-text-decoration: none;
-height: 8vh;
-width: 100%;
-position: sticky;
-top: 0;
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    height: 8vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+ul img {
+    height: 20vh;
+    align-items: center;
+    margin-bottom: 2.0rem;
+    margin-right: 10px;
 }
 
 li:hover {
-background-color: #fff112;
-transition: 1s;
-cursor: pointer;
-color: #000;
-letter-spacing: 2px;
+    background-color: #fff112;
+    transition: 1s;
+    cursor: pointer;
+    color: #000;
+    letter-spacing: 2px;
+    
 }
 
 li {
     height: 8vh;
-    width: 100%;
+    width: 200%;
     justify-content: center;
     display: flex;
     align-items: center;
     align-content: center;
 }
 
-
-.nav-item{
+.nav-item {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-img {
-    height: 20vh;
-    align-items: center;
-    margin-bottom:2.0rem ;
-    margin-top: 0.2rem;
-}
-
-
-
-.container{
-display: block;
-justify-content: center;
-height: 48vh;
-width: 100%;
-flex-direction: column-reverse;
+.container {
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
 }
 
 
-.carrossel{
-    background-color:#fff112;
-    width:100%;
-    height:58vh;
-    overflow: hidden
+.carrossel {
+    background-color: #fff112;
+    width: 100%;
+    height: 58vh;
+
 }
 
-.fotosCarrossel{
-    width: 500%;
+.fotosCarrossel {
+    width: 100%;
     height: 58vh;
     display: flex;
 }
 
-.fotosCarrossel input{
+.fotosCarrossel input {
     display: none;
 }
- 
-.fotosCarrossel{
-    width: 500%;
+
+.fotosCarrossel {
+    width: 100%;
     transition: 2s;
 }
 
-.fotosCarrossel img{
+.fotosCarrossel img {
     width: 900px;
     height: 58vh;
 }
 
 
-.segundaSec{
-background-color: #000;;
-width: 100%;
-height:58vh;
-display: flex;
-justify-content: start;
-
+.segundaSec {
+    background-color: #000;
+    ;
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: start;
+    box-shadow: black -1px 3px 20px 0px;
 }
 
-
-.terceiraSec{
-    background-color:#fff112;
+.terceiraSec {
+    background-color: #fff112;
     width: 100%;
-    height:58vh;
+    height: 58vh;
     display: flex;
     justify-content: end;
-    }
-
-    
-.quartaSec{
-    background-color:#000;
-    width: 100%;
-    height:58vh;
-    display: flex;
-    justify-content:start;
-
-    }
-
-    
-.quintaSec{
-    background-color:#fff112;
-    width: 100%;
-    height:58vh;
-
-    }
-
-    .branco{
-        background-color: #fff  ;
-        width: 98%;
-        height:54vh ;
-         
-    }
-
-    footer{
-        background-color:#000000;
-        width: 100%;
-        height:15vh
-    }
-.mobile-menu{
-    cursor: pointer;
-    display: none;
+    box-shadow: black -1px 3px 20px 0px;
 }
 
- .mobile-menu div {
-width: 32px;
-height: 2px;
-background: #000;
-margin: 8px;
+.quartaSec {
+    background-color: #000;
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: start;
+    box-shadow: black -1px 3px 20px 0px;
+}
 
- }
+.quintaSec {
+    background-color: #fff112;
+    width: 100%;
+    height: 58vh;
+    box-shadow: black -1px 3px 20px 0px;
+}
+
+.branco {
+    background-color: #fff;
+    width: 98%;
+    height: 54vh;
+    box-shadow: black -1px 3px 20px 0px;
+    justify-content: space-evenly;
+    display: flex;
         
-    @media (max-width:999px){
-        body{
-            overflow-x: hidden;
-        }
-        .nav-list{
-            position: absolute;
-            top: 8vh;
-            right: 0;
-            width: 50vw;
-            height: 92vh;
-            background: #fff;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            transform: translateX(100%);
-            
-        }
-        .nav-list li {
-            margin: 0;
-            opacity: 0;
+    align-content: center;
 
-        }
 
-        .mobile-menu{
-            display: block;
-        }
-        .nav-list.active{
-            transform:translateX(0);
-        }
+}
+
+.FIRST{
+    height: 54vh;
+}
+
+section h1{
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section  p {
+    margin-top: 10px;
+    font-size: 30px;
+    
+}
+
+
+
+button{
+    width: 200px;
+    height: 100px;
+    border-radius: 8px ;
+    background-color: #fff112;
+    border: none;
+    margin: 20px;
+    color: #fff;
+    box-shadow: black -1px 3px 20px 0px;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 1s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: large;
+}
+
+
+.cta {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 40px;
+    color: white;
+    background: #000;
+    transition: 1s;
+    box-shadow: 6px 6px 0 #474747;
+    transform: skewX(-15deg);
+    width: 400px;
+    margin-top: 45px; 
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fff112;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #fff112;
+    }
+    100% {
+        fill: white;
+    }
+}
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 15vh
+}
+@media (max-width:1400px){
+
+    section h1{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:999px) {
+
+    header {
+        position: sticky;
+        top: 0px;
+        box-shadow: black -1px 3px 20px 0px;
+    }
+
+    .nav-item {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 15px;
+        
+    }
+
+    li:hover {
+        background-color: #fff112;
+        transition: 1s;
+        cursor: pointer;
+        color: #000;
+        letter-spacing: 1px;
     
     }
+    
+    ul img {
+        
+        height: 15vh;
+        align-items: center;
+        margin-bottom: 2.0rem;
+    }
+    
+    .FIRST{
+        height: 54vh;
+    }
+    section h1{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section p {
+        font-size: 20px;
+    }
+
+}
